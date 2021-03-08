@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Easy Style</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/main.min.js"></script>
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<nav class="header__nav">
+				<a class="header__list-link" href="index.html">
+					<img class="header__list-img" src="images/logo.svg" alt="logo">
+				</a>
+				<ul class="header__list">
+					<li class="header__list-item">
+						<a href="shop.html" class="header__list-link">
+							Магазин
+						</a>
+					</li>
+					<li class="header__list-item">
+						<a href="#" class="header__list-link">
+							Инфо
+						</a>
+					</li>
+					<li class="header__list-item">
+						<a href="#" class="header__list-link">
+							Контакты
+						</a>
+					</li>
+					<li class="header__list-item">
+						<a href="#" class="header__list-link">
+							Как использовать
+						</a>
+					</li>
+					<li class="header__basket">
+						<a href="basket.html" class="header__list-link link-basket">
+							<img class="header__basket-img" src="images/shop.svg" alt="basket">
+							<p class="header__basket-text">
+
+							</p>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<header class="header__fixed">
+		<div class="container">
+			<nav class="header__nav">
+				<a class="header__list-link" href="index.html">
+					<img class="header__list-img" src="images/logo.svg" alt="logo">
+				</a>
+				<ul class="header__list">
+					<li class="header__list-item">
+						<a href="shop.html" class="header__list-link">
+							Магазин
+						</a>
+					</li>
+					<li class="header__list-item">
+						<a href="#" class="header__list-link">
+							Инфо
+						</a>
+					</li>
+					<li class="header__list-item">
+						<a href="#" class="header__list-link">
+							Контакты
+						</a>
+					</li>
+					<li class="header__list-item">
+						<a href="#" class="header__list-link">
+							Как использовать
+						</a>
+					</li>
+					<li class="header__basket">
+						<a href="basket.html" class="header__list-link link-basket">
+							<img class="header__basket-img" src="images/shop.svg" alt="basket">
+							<p class="header__basket-text">
+
+							</p>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<header class="header-mobile">
+		<div class="container">
+			<button class="header-mobile__menu">
+				<span></span>
+			</button>
+			<div class="header__nav">
+				<a class="header__list-link" href="index.html">
+					<img class="header__list-img" src="images/logo.svg" alt="logo">
+				</a>
+				<div class="header-mobile__basket">
+					<a href="basket.html" class="header__list-link link-basket">
+						<img class="header__basket-img" src="images/shop.svg" alt="basket">
+						<p class="header__basket-text">
+
+						</p>
+					</a>
+				</div>
+			</div>
+
+			<nav class="header-mobile__nav">
+				<ul class="header-mobile__list">
+					<li class="header-mobile__list-item">
+						<a href="shop.html" class="header__list-link">
+							Магазин
+						</a>
+					</li>
+					<li class="header-mobile__list-item">
+						<a href="#" class="header__list-link">
+							Инфо
+						</a>
+					</li>
+					<li class="header-mobile__list-item">
+						<a href="#" class="header__list-link">
+							Контакты
+						</a>
+					</li>
+					<li class="header-mobile__list-item">
+						<a href="#" class="header__list-link">
+							Как использовать
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+
+
+	<section class="shop">
+		<div class="container">
+			<div class="filter__show-inner">
+				<button class="filter__show">
+					ФИЛЬТР
+				</button>
+			</div>
+			<div class="shop__inner">
+				<form class="shop__filter">
+					<div class="shop__filter-item">
+						<h5 class="shop__title shop__title--active shop__title-first">
+							ЦЕНА
+						</h5>
+						<div class="shop__dropdown">
+							<div class="shop__range-slider-box">
+								<input type="text" class="shop__range-slider" data-type="double" data-min="0"
+									data-max="1000" data-from="0" data-to="500" data-grid="true">
+							</div>
+						</div>
+					</div>
+					<div class="shop__filter-item">
+						<h5 class="shop__title shop__title--active">
+							ТИП ТОВАРА
+						</h5>
+						<div class="shop__dropdown">
+							<label class="shop__filter-label">
+								Глина для волос
+								<input type="checkbox">
+								<span class="checkbox"></span>
+							</label>
+							<label class="shop__filter-label">
+								Помада для волос
+								<input type="checkbox" checked>
+								<span class="checkbox"></span>
+							</label>
+							<label class="shop__filter-label">
+								Пудра для волос
+								<input type="checkbox">
+								<span class="checkbox"></span>
+							</label>
+							<label class="shop__filter-label">
+								Паста для волос
+								<input type="checkbox">
+								<span class="checkbox"></span>
+							</label>
+						</div>
+					</div>
+					<div class="shop__filter-item">
+						<h5 class="shop__title shop__title--active">
+							ОСНОВА
+						</h5>
+						<div class="shop__dropdown">
+							<label class="shop__filter-label">
+								Водная
+								<input type="radio" name="pomade-type" checked>
+								<span class="radio-btn"></span>
+							</label>
+							<label class="shop__filter-label">
+								Бриолин
+								<input type="radio" name="pomade-type">
+								<span class="radio-btn"></span>
+							</label>
+						</div>
+					</div>
+					<div class="shop__filter-item">
+						<h5 class="shop__title shop__title--active">
+							ТИП ВОЛОС
+						</h5>
+						<div class="shop__dropdown">
+							<label class="shop__filter-label">
+								Прямые
+								<input type="radio" name="hair-type">
+								<span class="radio-btn"></span>
+							</label>
+							<label class="shop__filter-label">
+								Волнистые
+								<input type="radio" name="hair-type" checked>
+								<span class="radio-btn"></span>
+							</label>
+							<label class="shop__filter-label">
+								Кудри
+								<input type="radio" name="hair-type">
+								<span class="radio-btn"></span>
+							</label>
+						</div>
+					</div>
+				</form>
+				<div class="shop__content">
+					<div class="product">
+						<img src="images/pomade.png" alt="pomade" class="product__img">
+						<img src="images/pomade-active.png" alt="pomade" class="product__img product__img-active">
+						<p class="product__text">
+							Помада для волос Easy Style | 40 ml
+						</p>
+						<h3 class="product__title">
+							250 ГРН
+						</h3>
+						<a href="product-page.html" class="product__hover">
+							<p class="product__hover-text">
+								ПОСМОТРЕТЬ ТОВАР
+							</p>
+						</a>
+					</div>
+					<div class="product">
+						<img src="images/pomade.png" alt="pomade" class="product__img">
+						<img src="images/pomade-active.png" alt="pomade" class="product__img product__img-active">
+						<p class="product__text">
+							Помада для волос Easy Style | 40 ml
+						</p>
+						<h3 class="product__title">
+							250 ГРН
+						</h3>
+						<a href="product-page.html" class="product__hover">
+							<p class="product__hover-text">
+								ПОСМОТРЕТЬ ТОВАР
+							</p>
+						</a>
+					</div>
+					<div class="product">
+						<img src="images/pomade.png" alt="pomade" class="product__img">
+						<img src="images/pomade-active.png" alt="pomade" class="product__img product__img-active">
+						<p class="product__text">
+							Помада для волос Easy Style | 40 ml
+						</p>
+						<h3 class="product__title">
+							250 ГРН
+						</h3>
+						<a href="product-page.html" class="product__hover">
+							<p class="product__hover-text">
+								ПОСМОТРЕТЬ ТОВАР
+							</p>
+						</a>
+					</div>
+					<div class="product">
+						<img src="images/pomade.png" alt="pomade" class="product__img">
+						<img src="images/pomade-active.png" alt="pomade" class="product__img product__img-active">
+						<p class="product__text">
+							Помада для волос Easy Style | 40 ml
+						</p>
+						<h3 class="product__title">
+							250 ГРН
+						</h3>
+						<a href="product-page.html" class="product__hover">
+							<p class="product__hover-text">
+								ПОСМОТРЕТЬ ТОВАР
+							</p>
+						</a>
+					</div>
+					<div class="product">
+						<img src="images/pomade.png" alt="pomade" class="product__img">
+						<img src="images/pomade-active.png" alt="pomade" class="product__img product__img-active">
+						<p class="product__text">
+							Помада для волос Easy Style | 40 ml
+						</p>
+						<h3 class="product__title">
+							250 ГРН
+						</h3>
+						<a href="product-page.html" class="product__hover">
+							<p class="product__hover-text">
+								ПОСМОТРЕТЬ ТОВАР
+							</p>
+						</a>
+					</div>
+					<div class="product">
+						<img src="images/pomade.png" alt="pomade" class="product__img">
+						<img src="images/pomade-active.png" alt="pomade" class="product__img product__img-active">
+						<p class="product__text">
+							Помада для волос Easy Style | 40 ml
+						</p>
+						<h3 class="product__title">
+							250 ГРН
+						</h3>
+						<a href="product-page.html" class="product__hover">
+							<p class="product__hover-text">
+								ПОСМОТРЕТЬ ТОВАР
+							</p>
+						</a>
+					</div>
+					<div class="product">
+						<img src="images/pomade.png" alt="pomade" class="product__img">
+						<img src="images/pomade-active.png" alt="pomade" class="product__img product__img-active">
+						<p class="product__text">
+							Помада для волос Easy Style | 40 ml
+						</p>
+						<h3 class="product__title">
+							250 ГРН
+						</h3>
+						<a href="product-page.html" class="product__hover">
+							<p class="product__hover-text">
+								ПОСМОТРЕТЬ ТОВАР
+							</p>
+						</a>
+					</div>
+					<div class="product">
+						<img src="images/pomade.png" alt="pomade" class="product__img">
+						<img src="images/pomade-active.png" alt="pomade" class="product__img product__img-active">
+						<p class="product__text">
+							Помада для волос Easy Style | 40 ml
+						</p>
+						<h3 class="product__title">
+							250 ГРН
+						</h3>
+						<a href="product-page.html" class="product__hover">
+							<p class="product__hover-text">
+								ПОСМОТРЕТЬ ТОВАР
+							</p>
+						</a>
+					</div>
+					<div class="product">
+						<img src="images/pomade.png" alt="pomade" class="product__img">
+						<img src="images/pomade-active.png" alt="pomade" class="product__img product__img-active">
+						<p class="product__text">
+							Помада для волос Easy Style | 40 ml
+						</p>
+						<h3 class="product__title">
+							250 ГРН
+						</h3>
+						<a href="product-page.html" class="product__hover">
+							<p class="product__hover-text">
+								ПОСМОТРЕТЬ ТОВАР
+							</p>
+						</a>
+					</div>
+					<div class="product">
+						<img src="images/pomade.png" alt="pomade" class="product__img">
+						<img src="images/pomade-active.png" alt="pomade" class="product__img product__img-active">
+						<p class="product__text">
+							Помада для волос Easy Style | 40 ml
+						</p>
+						<h3 class="product__title">
+							250 ГРН
+						</h3>
+						<a href="product-page.html" class="product__hover">
+							<p class="product__hover-text">
+								ПОСМОТРЕТЬ ТОВАР
+							</p>
+						</a>
+					</div>
+					<div class="product">
+						<img src="images/pomade.png" alt="pomade" class="product__img">
+						<img src="images/pomade-active.png" alt="pomade" class="product__img product__img-active">
+						<p class="product__text">
+							Помада для волос Easy Style | 40 ml
+						</p>
+						<h3 class="product__title">
+							250 ГРН
+						</h3>
+						<a href="product-page.html" class="product__hover">
+							<p class="product__hover-text">
+								ПОСМОТРЕТЬ ТОВАР
+							</p>
+						</a>
+					</div>
+					<div class="product">
+						<img src="images/pomade.png" alt="pomade" class="product__img">
+						<img src="images/pomade-active.png" alt="pomade" class="product__img product__img-active">
+						<p class="product__text">
+							Помада для волос Easy Style | 40 ml
+						</p>
+						<h3 class="product__title">
+							250 ГРН
+						</h3>
+						<a href="product-page.html" class="product__hover">
+							<p class="product__hover-text">
+								ПОСМОТРЕТЬ ТОВАР
+							</p>
+						</a>
+					</div>
+
+					<div class="pagination">
+						<div class="pagination__inner">
+							<a href="#" class="pagination__link pagination__link--active">
+								1
+							</a>
+							<a href="#" class="pagination__link">
+								2
+							</a>
+							<a href="#" class="pagination__link">
+								3
+							</a>
+							<a href="#" class="pagination__link">
+								4
+							</a>
+							<a href="#" class="pagination__link">
+								5
+							</a>
+							<a href="#" class="pagination__link">
+								...
+							</a>
+							<a href="#" class="pagination__link">
+								11
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="footer">
+		<div class="container">
+			<ul class="footer__list">
+				<li class="footer__list-item">
+					<a href="index.html">
+						<img src="images/logo.svg" alt="logo">
+					</a>
+					<p class="footer__list-text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque omnis vero in! In,
+						quidem minus et sed aperiam ratione repellendus quibusdam dolor at nesciunt, reprehenderit
+						ullam pariatur cum adipisci.
+					</p>
+					<div class="footer__list-box">
+						<a href="#" class="footer__list-box-link">
+							<img src="images/vk.svg" vk" class="footer__list-img">
+						</a>
+						<a href="#" class="footer__list-box-link">
+							<img src="images/fb.svg" vk" class="footer__list-img">
+						</a>
+						<a href="#" class="footer__list-box-link">
+							<img src="images/ig.svg" vk" class="footer__list-img">
+						</a>
+					</div>
+				</li>
+				<li class="footer__list-item">
+					<h3 class="footer__list-title">
+						ИНФО
+					</h3>
+					<a href="#" class="footer__list-link">
+						О нас
+					</a>
+					<a href="#" class="footer__list-link">
+						Контакты
+					</a>
+					<a href="#" class="footer__list-link">
+						Новости
+					</a>
+				</li>
+				<li class="footer__list-item">
+					<h3 class="footer__list-title">
+						ПОЛЕЗНЫЕ ССЫЛКИ
+					</h3>
+					<a href="#" class="footer__list-link">
+						Оплата и доставка
+					</a>
+					<a href="#" class="footer__list-link">
+						Сотрудничество
+					</a>
+					<a href="#" class="footer__list-link">
+						FAQ
+					</a>
+				</li>
+				<p class="footer__text">
+					©2021 EASY LOOK
+				</p>
+			</ul>
+		</div>
+
+	</footer>
+
+
+
+</body>
+
+</html>
